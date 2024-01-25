@@ -31,6 +31,7 @@ function startProject() {
 		if (code == 2) {
 			log.info("Restarting Project...");
 			startProject();
+			const keep_alive = require('./keep_alive.js')
 		}
 	});
 }
